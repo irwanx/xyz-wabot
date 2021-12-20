@@ -1,4 +1,22 @@
-![](https://visitor-badge.glitch.me/badge?page_id=irwanx/xyz-wabot)<p>
+<p align="center"> 
+  <img src="https://github.com/irwanx.png" height="130"/> 
+  </p> 
+  <h3 align="center">Made with ❤️ by</h3> 
+  <p align="center"> 
+  <a href="https://github.com/irwanx/"><img title="Author" src="https://img.shields.io/badge/author-irwanx-blue?style=for-the-badge&logo=github"></a> 
+  </p> 
+  <p align="center"> 
+  <a href="https://github.com/irwanx/followers"><img title="Followers" src="https://img.shields.io/github/followers/irwanx?color=blue&style=flat-square"></a> 
+  <a href="https://visitor-badge.glitch.me/badge?page_id=irwanx/xyz-wabot"><img title="Viesitor" src="https://visitor-badge.glitch.me/badge?page_id=irwanx/xyz-wabot"></a> 
+  <a href="https://github.com/irwanx/xyz-wabot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/irwanx/xyz-wabot?color=red&style=flat-square"></a> 
+  <a href="https://github.com/irwanx/xyz-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/irwanx/xyz-wabot?color=red&style=flat-square"></a> 
+  <a href="https://github.com/irwanx/xyz-wabot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/irwanx/xyz-wabot?label=watchers&color=blue&style=flat-square"></a> 
+  </p>
+  <p align="center"> 
+  <a href="https://github.com/irwanx/xyz-wabot"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/XyZ Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+    <br> 
+  WhatsApp Bot Using @adiwajshing/baileys library!<hr> 
+  </p> 
 <h1 align="left">xyz-wabot</h1>
 
 
