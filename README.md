@@ -161,5 +161,5 @@ conn.logger.level = 'debug'
 
  [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![IrwanX](https://github.com/irwanx.png?size=100)](https://github.com/irwanx)
 ----|----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Fadli](https://github.com/irwanx)
+[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Irwanx](https://github.com/irwanx)
  Penulis / Pencipta | Penulis ulang | Penulis ulang
