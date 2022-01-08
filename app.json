@@ -1,0 +1,12 @@
+{
+  "name": "xyz-wabot",
+  "description": "Lightweight WhatsApp Bot",
+  "repository": "https://github.com/irwanx/xyz-wabot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "multi-device",
+    "whatsapp-bot"
+  ]
+}
