@@ -1,5 +1,11 @@
+const {
+    WAMessage,
+    proto,
+    generateWAMessageFromContent
+  } = require('@adiwajshing/baileys-md')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let yts = require('yt-search')
+let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} california`
   let chat = global.db.data.chats[m.chat]
@@ -28,7 +34,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *Ukuran File Audio:* ${filesizeF}
 *Ukuran File Video:* ${yt2.filesizeF}
 *Server y2mate:* ${usedServer}`
- await conn.sendTBL(m.chat, capt, wm, await (await fetch(thumb)).buffer(), "Donasi Bot", dns, null, null, "Audio", `.ytv ${vid.url}`, "Video", `.yta ${vid.url}`,null, null, m)
+await sock.send3Template2UrlButtonLoc(m.chat,capt.trim(), wm, await (await fetch(thumb)).buffer(), 'Video', `.ytv ${vid.url}`, 'Audio', `.yta ${vid.url}`, 'Menu', '#menu', m)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']

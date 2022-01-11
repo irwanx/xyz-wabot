@@ -4,9 +4,9 @@ global.chalk = require('chalk')
 global.os = require('os')
 global.moment = require('moment-timezone')
 global.axios = require('axios')
-global.cheerio = require('cheerio')
 global.scrape = require('./lib/scrape')
-global.owner = ['628882611841', '62882008369956', '6281319944687'] // Put your number here
+global.cheerio = require('cheerio')
+global.owner = ['628882611841', '15879075033', '6287833362646', '6285892766102', '6283172366463', '62882008369956', '6281319944687'] // Put your number here
 global.mods = ['62882008369956'] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.DeveloperMode = 'false'
@@ -19,10 +19,12 @@ global.APIs = { // API Prefix
   zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
+  neoxr: 'https://neoxr-api.herokuapp.com',
   irwan: 'https://irwan-api1-xyz.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
+  'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://api.xteam.xyz': 'd90a9e986e18778b',
   'https://irwan-api1-xyz.herokuapp.com': 'IrwanGans',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
@@ -32,11 +34,19 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '🐣'
-global.author = '_fln'
-global.packnamee = 'COLONG? ywd'
+global.packname = ':)'
+global.author = '@irwan_x_yans'
+global.packnamee = 'COLONG\nWAJIB FOLLOW IG'
 
-global.dns = 'https://saweria.co/irwanxyans'
+global.gcex = "https://chat.whatsapp.com/L508viIjjPwHpYEqgTxqj6"
+global.fotoex = "https://telegra.ph/file/5f6d986c0b87dc6a0d78b.jpg"
+
+//donasi
+global.swr = "https://saweria.co/irwanxyans"
+global.dana = "0888-2611-841"
+global.ovo = "0888-2611-841"
+
+
 global.multiplier = 69 // The higher, The harder levelup
 
 global.rpg = {

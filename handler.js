@@ -13,51 +13,54 @@ module.exports = {
         // if (chatUpdate.messages.length > 2 || !chatUpdate.messages.length) return
         if (chatUpdate.messages.length > 1) console.log(chatUpdate.messages)
         let m = chatUpdate.messages[chatUpdate.messages.length - 1]
+        let _uptime = process.uptime() * 1000
+        global.uptime = clockString(_uptime)
+        const more = String.fromCharCode(8206)
+        global.readMore = more.repeat(4001)
         global.img = pickRandom(global.fotom)
-        global.sock = conn
-        global.blur1 = pickRandom(global.blurr)
-        global.blur = await(await fetch(blur1)).buffer()
-        global.wm1 = `© falin`
+        global.blur = pickRandom(global.blurr)
         global.wait = pickRandom(global.waitt)
-        global.namabot = conn.user.name
         global.fla = pickRandom(global.flaa)
         global.eror = pickRandom(global.emror)
         global.scn = pickRandom(global.waktuk)
-        let d = new Date(new Date + 3600000)
+        global.namabot = conn.user.name
+        global.ucapan = ucapan()
+        global.pickRandom = pickRandom
+        global.sock = conn
+        global.wm1 = `© irwan_x_yans`
+        global.d = new Date(new Date + 3600000)
         const hariRaya = new Date('December 31, 2022 23:59:59')
         const sekarang = new Date().getTime()
-    const Selisih = hariRaya - sekarang
-    const jhari = Math.floor( Selisih / (1000 * 60 * 60 * 24));
-    const jjam = Math.floor( Selisih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
-    const mmmenit = Math.floor( Selisih % (1000 * 60 * 60) / (1000 * 60))
-    const ddetik = Math.floor( Selisih % (1000 * 60) / 1000)
+        const Selisih = hariRaya - sekarang
+        const jhari = Math.floor( Selisih / (1000 * 60 * 60 * 24));
+        const jjam = Math.floor( Selisih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+        const mmmenit = Math.floor( Selisih % (1000 * 60 * 60) / (1000 * 60))
+        const ddetik = Math.floor( Selisih % (1000 * 60) / 1000)
         const ultah = new Date('march 7, 2022 23:59:59')
-    const sekarat = new Date().getTime() 
-    const Kurang = ultah - sekarat
-    const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
-    const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
-    const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
-    const detek = Math.floor( Kurang % (1000 * 60) / 1000)
-    let locale = 'id'
-    let week = d.toLocaleDateString(locale, { weekday: 'long' })
-    let date = d.toLocaleDateString(locale, {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
-    let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    }).format(d)
-    let _uptime = process.uptime() * 1000
-    let waktuwib = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-    let uptime = clockString(_uptime)
-    global.wm = `Waktu: ${waktuwib}\n${week}, ${date}\n\nby Falin sls`
-//Ultah Owner: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`
-//Kurang ${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik Lagi Tahun Baru.. `
-global.titleex = wm
-global.bodyex = wm1
+        const sekarat = new Date().getTime() 
+        const Kurang = ultah - sekarat
+        const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
+        const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+        const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
+        const detek = Math.floor( Kurang % (1000 * 60) / 1000)
+        global.locale = 'id'
+        global.week = d.toLocaleDateString(locale, { weekday: 'long' })
+        global.date = d.toLocaleDateString(locale, {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+        })
+        global.dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+        }).format(d)
+        global.wib= require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+        global.wm = `Waktu: ${wib} WIB\nTanggal : ${week}, ${date}\nTanggal Islam: ${dateIslamic}\nAktif Selama: ${uptime}\n\n© falin`
+/*
+Ultah Owner: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`
+Kurang ${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik Lagi Tahun Baru.. `
+*/
         if (!m) return
         console.log(JSON.stringify(m, null, 4))
         try {
@@ -768,7 +771,7 @@ global.dfail = (type, m, conn) => {
         nsfw: 'NSFW doesnt active.\nNSFW tidak aktif.',
         restrict: 'Fitur ini di *disable*!'
     }[type]
-    if (msg) return conn.sendButton(m.chat, msg.trim(), wm, null, [[`Menu`, `#menu`]], m)
+    if (msg) return conn.sB(m.chat, msg.trim(), wm, null, [[`Menu`, `#menu`]], m)
 }
 
 let fs = require('fs')
@@ -781,15 +784,33 @@ fs.watchFile(file, () => {
     if (global.reloadHandler) console.log(global.reloadHandler())
 })
 
+function ucapan() {
+      const time = require('moment-timezone').tz('Asia/Jakarta').format('HH')
+      res = "Selamat dinihari"
+      if (time >= 4) {
+        res = "Selamat pagi"
+      }
+      if (time > 10) {
+        res = "Selamat siang"
+      }
+      if (time >= 15) {
+        res = "Selamat sore"
+      }
+      if (time >= 18) {
+        res = "Selamat malam"
+      }
+      return res
+    }
+    
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
     let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
     let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
     return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-  }
+}
 
 function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
+  return list[Math.floor(Math.random() * list.length)]
 }
 
 global.emror = [

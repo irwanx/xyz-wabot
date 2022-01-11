@@ -57,7 +57,7 @@ let handler = async m => conn.reply(m.chat, `
 ⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 `.trim(), m) // Tambah sendiri kalo mau
 handler.help = ['kodebahasa']
-handler.tags = ['info', 'update']
+handler.tags = ['info']
 handler.command = /^kodebahasa$/i
 
 module.exports = handler

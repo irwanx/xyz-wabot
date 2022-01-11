@@ -5,7 +5,7 @@ let handler  = async (m, _2) => {
   let { conn, usedPrefix, noPrefix, args, groupMetadata } = _2
   let _return
   let _syntax = ''
-  let _text = (/^~/.test(usedPrefix) ? 'return ' : '') + noPrefix
+  let _text = (/^=/.test(usedPrefix) ? 'return ' : '') + noPrefix
   let old = m.exp * 1 
   try {
     let i = 15
@@ -30,9 +30,9 @@ let handler  = async (m, _2) => {
     m.exp = old
   }
 }
-handler.help = ['> ', '~> ']
+handler.help = ['> ', '=> ']
 handler.tags = ['advanced']
-handler.customPrefix = /^~?> /
+handler.customPrefix = /^=?> /
 handler.command = /(?:)/i
 handler.rowner = true
 handler.owner = false

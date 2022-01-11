@@ -5,7 +5,7 @@ let txt = await res.text()
 let arr = txt.split('\n')
 let cita = arr[Math.floor(Math.random() * arr.length)]
 
-   await sock.sendTBL(m.chat, cita, wm, await(await fetch(fla + `${command}`)).buffer(), "Donasi", dns, null, null, `${command}`, `${usedPrefix + command}`, null, null, null, m)
+   await conn.reply(m.chat, cita, m)
 }
 handler.help = ['senja']
 handler.tags = ['quotes']

@@ -1,5 +1,4 @@
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
-let fetch = require('node-fetch')
 
 let handler = async (m, { conn, args, usedPrefix, isPrems, isOwner}) => {
     if (!args[0]) throw `Link nya mana?`

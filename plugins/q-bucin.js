@@ -1,5 +1,5 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
-  sock.sendTBL(m.chat, `${pickRandom(global.bucin)}`, wm, await(await require('node-fetch')(fla + `${command}`)).buffer(), "Donasi", dns, null, null, `${command}`, `${usedPrefix + command}`, null, null, null, null, m)
+  conn.reply(m.chat, `${pickRandom(global.bucin)}`, m)
 }
 handler.help = ['bucin']
 handler.tags = ['quotes']

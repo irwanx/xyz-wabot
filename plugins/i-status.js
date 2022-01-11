@@ -47,7 +47,7 @@ let handler = async(m, { conn, usedPrefix, DevMode }) => {
         await conn.reply(m.chat, 'Tunggu bentar', m)
         let _ramTotal = (ramTotal + ' MB')
         let neww = performance.now()
-        conn.sendTBL(m.chat, `
+        conn.reply(m.chat, `
   *Status Bot*
 OS: *${OS}*
 CPU Model: *${cpuModel}*
@@ -58,7 +58,7 @@ Drive: *${driveUsed} / ${driveTotal} (${drivePer})*
 Ping: *${Math.round(neww - old)} ms*
 Internet IN: *${netsIn}*
 Internet OUT: *${netsOut}*
-`.trim(), wm, await(await require('node-fetch')(fla + 'Status Bot')).buffer(), "donasi", dns, null, null, null, null, null, null, null, null, m)
+`.trim(), m)
         console.log(OS)
     } catch (e) {
         console.log(e)

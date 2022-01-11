@@ -1,4 +1,5 @@
 let limit = 50
+let fetch = require('node-fetch')
 const { servers, ytv } = require('../lib/y2mate')
 let handler = async(m, { conn, args, isPrems, isOwner }) => {
     if (!args || !args[0]) return m.reply('Uhm... urlnya mana?')
@@ -9,7 +10,6 @@ let handler = async(m, { conn, args, isPrems, isOwner }) => {
     m.reply(isLimit ? `Ukuran File: ${filesizeF}\nUkuran file diatas ${limit} MB, download sendiri: ${dl_link}` : wait)
     let _thumb = {}
     try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } } catch (e) {}
-    m.reply(wait)
     if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4', `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
