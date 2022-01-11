@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		'0': 'announcement',
 	}[(args[0] || '')]
 	if (isClose === undefined) {
-		await conn.sendButton(m.chat, `
+		await conn.sB(m.chat, `
 contoh:
 ${usedPrefix + command} tutup
 ${usedPrefix + command} buka

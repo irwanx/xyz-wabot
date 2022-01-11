@@ -122,7 +122,7 @@ handler.all = async function (m, { isPrems }) {
         if (yt === false) return m.reply(eror)
         if (yt2 === false) return m.reply(eror)
         let { dl_link, thumb, title, filesize, filesizeF } = yt
-        await this.sendButtonLoc(m.chat, `
+        await this.sBL(m.chat, `
 Judul: ${title}
 Ukuran File Audio: ${filesizeF}
 Ukuran File Video: ${yt2.filesizeF}

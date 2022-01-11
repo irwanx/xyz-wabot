@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, isPrems, isOwner}) => {
             else global.db.data.chats[res].expired = now + jumlahHari
                 m.reply(`Berhasil join grup ${res}\nBot akan keluar secara otomatis setelah: ${msToDate(global.db.data.chats[res].expired - now)}.\nToken joincount mu: ${user.joincount}/1`)
                 this.reply(global.owner[0] + '@s.whatsapp.net', `@${m.sender.split`@`[0]} telah menambahkan ${conn.user.name} ke ${res}, bot akan keluar dalam waktu: ${msToDate(global.db.data.chats[res].expired - now)}`, 0,  { contextInfo: { mentionedJid: [m.sender]}})
-                await conn.sendButtonLoc(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
+                await conn.sBL(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
         })
     } else if (!isOwner) {
         if (users.joincount === 1) throw `Kamu sudah melebihi token/limit memasukkan bot ke dalam group!`
@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, isPrems, isOwner}) => {
             else global.db.data.chats[res].expired = now + jumlahHari
                 m.reply(`Berhasil join grup ${res}\nBot akan keluar secara otomatis setelah: ${msToDate(global.db.data.chats[res].expired - now)}.\nToken joincount mu: ${user.joincount}/3`)
                 this.reply(global.owner[0] + '@s.whatsapp.net', `@${m.sender.split`@`[0]} telah menambahkan ${conn.user.name} ke ${res}, bot akan keluar dalam waktu: ${msToDate(global.db.data.chats[res].expired - now)}`, 0,  { contextInfo: { mentionedJid: [m.sender]}})
-                await conn.sendButtonLoc(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
+                await conn.sBL(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
         })
     } else if (isOwner) {
         if (!args[1]) throw `Masukkan format yang benar! format: .join <link> <jumlah hari>`
@@ -40,7 +40,7 @@ let handler = async (m, { conn, args, usedPrefix, isPrems, isOwner}) => {
             if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
             else global.db.data.chats[res].expired = now + jumlahHari
             await m.reply(`Berhasil join grup ${res}\nBot akan keluar secara otomatis setelah: ${msToDate(global.db.data.chats[res].expired - now)}`)
-            await conn.sendButtonLoc(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
+            await conn.sBL(res, `${conn.user.name} adalah bot whatsapp yang dibangun dengan Nodejs, ${conn.user.name} diundang oleh @${m.sender.split(`@`)[0]}\n\nKetik ${usedPrefix}menu untuk melihat daftar perintah\nBot akan keluar secara otomatis setelah ${msToDate(global.db.data.chats[res].expired - now)}`.trim(), wm, await(await fetch(img)).buffer(), [['Menu', `${usedPrefix}?`]], null, { contextInfo: { mentionedJid: [m.sender] } })
         })
     }
 }
