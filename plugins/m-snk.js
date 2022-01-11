@@ -28,7 +28,7 @@ Syarat Ketentuan Bot
 -Irwan
 
 Peraturan: 4 November 2021`
-    conn.sendTBL(m.chat, teks, wm, await(await fetch(fla+ "Peraturan")).buffer(), "Donasi", dns, null, null, null, null, null, null, null, null, m)
+    conn.sendTBL(m.chat, teks, wm, await(await fetch(fla+ "Peraturan")).buffer(), "Donasi", swr, null, null, null, null, null, null, null, null, m)
 }
 handler.help = ['peraturan']
 handler.command = /^(snk|syarat|peraturan|rules)$/i

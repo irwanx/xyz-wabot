@@ -12,7 +12,7 @@ Money: ${user.money}
 Exp: ${user.exp}
 Level: ${user.level}
 Role: ${user.role}`
-     conn.sendTBL(m.chat, anu, wm, await(await require("node-fetch")(fla + "My")).buffer(),"Donasi", dns, null, null, "Back To Main Menu", "#menu", null, null, null, null, m)
+     conn.sendTBL(m.chat, anu, wm, await(await require("node-fetch")(fla + "My")).buffer(),"Donasi", swr, null, null, "Back To Main Menu", "#menu", null, null, null, null, m)
 }
 handler.help = ['my', 'my @user']
 handler.tags = ['xp']

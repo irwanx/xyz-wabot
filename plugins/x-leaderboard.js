@@ -35,7 +35,7 @@ ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `┃ ${i + 1}. ${participan
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `┃ ${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Level ${level}*`).join`\n`}
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙`.trim()
-  conn.sendTBL(m.chat, text, wm, await(await require('node-fetch')(fla + 'Leaderboard')), "Donasi", dns, null, null, `Menu`, `${usedPrefix}menu`, null, null, null, null, m, {
+  conn.sendTBL(m.chat, text, wm, await(await require('node-fetch')(fla + 'Leaderboard')), "Donasi", swr, null, null, `Menu`, `${usedPrefix}menu`, null, null, null, null, m, {
     contextInfo: {
       mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
     }
