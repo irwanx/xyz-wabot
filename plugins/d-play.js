@@ -34,7 +34,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *Ukuran File Audio:* ${filesizeF}
 *Ukuran File Video:* ${yt2.filesizeF}
 *Server y2mate:* ${usedServer}`
-await sock.send3Template2UrlButtonLoc(m.chat,capt.trim(), wm, await (await fetch(thumb)).buffer(), 'Video', `.ytv ${vid.url}`, 'Audio', `.yta ${vid.url}`, 'Menu', '#menu', m)
+await sock.sendTBL(m.chat,capt.trim(), wm, await (await fetch(thumb)).buffer(), "Donasi", "Donasi", null,  null, 'Video', `.ytv ${vid.url}`, 'Audio', `.yta ${vid.url}`, 'Menu', '#menu', m)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
