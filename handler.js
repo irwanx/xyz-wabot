@@ -693,35 +693,18 @@ Kurang ${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik Lagi Tahun Bar
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
-                        let pp = "./src/avatar_conctact.png"
+                        let pp = "./src/avatar_contact.png"
                         try {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(id)).replace('@desc', groupMetadata.desc.toString()).replace('@mem', groupMetadata.participants.length) :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-                            this.sendFile(id, pp, 'pp.jpg', text, {
-                key: {
-                  fromMe: false,
-                  participant: '0@s.whatsapp.net',
-                  remoteJid: 'status@broadcast'
-                },
-                message: {
-                  contactMessage: {
-                    displayName: this.getName(user),
-                    vcard: `BEGIN: VCARD\nVERSION:3.0\nN:;WA;;;\nFN: WA\nTEL ; type=VOICE;waid=${user.split('@')[0]}:${user.split('@')[0]}\nEND:VCARD`
-                  }
-                }
-              }, null, false, {
+                            this.sendFile(id, pp, 'pp.jpg', text, null, false, {
                                 contextInfo: {
                                     mentionedJid: [user]
                                 }
                             })
-                            /*this.sendTemplate2UrlButtonLoc(id, text, wm1, await(await fetch(pp)).buffer(), action === 'add' ? 'Welcome' : 'Goodbye', 'p', null, {
-                            contextInfo: {
-                             mentionJid: [user]
-                             }
-                          })*/
                         }
                     }
                 }
