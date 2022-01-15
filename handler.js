@@ -880,11 +880,9 @@ global.flaa = [
  ]
 
 global.blurr = [
-'https://telegra.ph/file/1886961d3a87ae6f7a6d7.jpg',
-'https://telegra.ph/file/dcf8e695b461c957ce0a5.jpg',
-'https://telegra.ph/file/ed8cad6d77c75921337f8.jpg',
-'https://telegra.ph/file/6e56424b1beebd3042b97.jpg',
-'https://telegra.ph/file/e892cb11a77ef52f740c2.jpg'
+'https://telegra.ph/file/49f202e8f18ce4825618c.jpg',
+'https://telegra.ph/file/1811561e85c55eb7e10c9.jpg',
+'https://telegra.ph/file/b6e8d4e5a413c6f6b7d4d.jpg'
 ]
 
 global.waktuk = [
