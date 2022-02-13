@@ -162,10 +162,6 @@ async function connectionUpdate(update) {
         connection,
         lastDisconnect
     } = update
-    const {
-        connection,
-        lastDisconnect
-    } = update
     global.timestamp.connect = new Date
     if (lastDisconnect && lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut && conn.ws.readyState !== WebSocket.CONNECTING) {
         console.log(global.reloadHandler(true))
