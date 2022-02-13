@@ -1,10 +1,19 @@
-let handler = async (m, { conn, text, participants, usedPrefix }) => {
+let handler = async (m, {
+    conn,
+    text,
+    participants,
+    usedPrefix
+}) => {
     if (!text) throw `contoh:\n${usedPrefix}paling cantik`
     let member = participants.map(u => u.jid)
     let cakep = member[Math.floor(Math.random() * member.length)]
-    let jawab = `Yang paling ${text} disini adalah @${cakep.replace(/@.+/, '')}`.trim()
+    let jawab = `Yang paling ${text} disini adalah @${cakep.split('@')[0]}`.trim()
     let mentionedJid = [cakep]
-    conn.reply(m.chat, jawab, m, { contextInfo: { mentionedJid } })
+    conn.reply(m.chat, jawab, m, {
+        contextInfo: {
+            mentionedJid
+        }
+    })
 }
 handler.help = ['paling <teks>']
 handler.tags = ['fun']

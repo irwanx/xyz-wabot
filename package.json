@@ -1,6 +1,6 @@
 {
-    "name": "xyz666x-wabot",
-    "version": "1.0.86",
+    "name": "dobdabot",
+    "version": "1.0.87",
     "description": "Jika Bot Mengalami Error/Tidak Berfungsi/Kamu Menemukan Bug, Langsung Laporkan Ke Owner. Terimakasih",
     "depecrated": false,
     "main": "index.js",
@@ -20,7 +20,7 @@
         "whatsapp",
         "js-whatsapp",
         "whatsapp",
-        "xyz-wabot",
+        "dobdabot",
         "wabot-aq"
     ],
     "homepage": "https://github.com/irwanx/xyz-wabot",

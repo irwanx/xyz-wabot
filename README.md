@@ -60,7 +60,7 @@ node . (option)
 * https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
  
 ## Donate 
-- [ Saweria ](https://saweria.co/irwanx) 
+- [ Saweria ](https://saweria.co/dobdabot) 
 
 ## Thanks To
 - [adiwajshing/baileys](https://github.com/adiwajshing/baileys)

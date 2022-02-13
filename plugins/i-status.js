@@ -1,6 +1,12 @@
-let { performance } = require('perf_hooks')
+let {
+    performance
+} = require('perf_hooks')
 let osu = require('node-os-utils')
-let handler = async(m, { conn, usedPrefix, DevMode }) => {
+let handler = async (m, {
+    conn,
+    usedPrefix,
+    DevMode
+}) => {
     try {
         let NotDetect = 'Not Detect'
         let old = performance.now()
@@ -85,11 +91,3 @@ handler.botAdmin = false
 handler.fail = null
 
 module.exports = handler
-
-function clockString(ms) {
-    let h = Math.floor(ms / 3600000)
-    let m = Math.floor(ms / 60000) % 60
-    let s = Math.floor(ms / 1000) % 60
-    console.log({ ms, h, m, s })
-    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}

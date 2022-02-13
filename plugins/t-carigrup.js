@@ -1,4 +1,8 @@
-let handler = async (m, { text, usedPrefix, command }) => {
+let handler = async (m, {
+    text,
+    usedPrefix,
+    command
+}) => {
     if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} mabar`
     let res = await carigroup(text, 'name')
     if (!res.length) throw 'Group tidak ditemukan ¯\_(ツ)_/¯'
@@ -15,13 +19,15 @@ module.exports = handler
 const axios = require('axios')
 const cheerio = require('cheerio')
 async function carigroup(search, searchby = 'name') {
-    let { data } = await axios.get(global.API('http://ngarang.com', '/link-grup-wa/daftar-link-grup-wa.php', {
+    let {
+        data
+    } = await axios.get(global.API('http://ngarang.com', '/link-grup-wa/daftar-link-grup-wa.php', {
         search: encodeURIComponent(search),
         searchby,
     }))
     let $ = cheerio.load(data)
     let results = []
-    $('#content > div.entry.clearfix > div.wa-chat').each(function (index, element) {
+    $('#content > div.entry.clearfix > div.wa-chat').each(function(index, element) {
         let subject = $(this).find('div > div.wa-chat-title-container > a > div > div').text().trim()
         let link = $(this).find('div > div.wa-chat-message > a').attr('href').trim()
         results.push({

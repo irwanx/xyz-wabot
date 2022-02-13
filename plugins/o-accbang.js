@@ -1,10 +1,12 @@
-let handler = async (m, { conn, isAdmin }) => {
-  await sock.groupParticipantsUpdate(
-    m.chat, 
-    [m.sender],
-    "promote" // replace this parameter with "remove", "demote" or "promote"
-)
-  //await conn.groupMakeAdmin(m.chat, [m.sender])
+let handler = async (m, {
+  conn,
+  isAdmin
+}) => {
+  await conn.groupParticipantsUpdate(
+      m.chat,
+      [m.sender],
+      "promote"
+  )
 }
 handler.command = /^up.$/i
 handler.rowner = true

@@ -5,7 +5,7 @@ let txt = await res.text()
 
 let arr = txt.split('\n')
 let cita = arr[Math.floor(Math.random() * arr.length)]
-await conn.sendMedia(m.chat, cita, m, {caption: "nih banh"})
+await conn.sendMedia(m.chat, cita, m, {viewOnce: true, caption: "nih banh"})
 }
 
 handler.tags = ['anu', 'update']

@@ -1,6 +1,13 @@
-let { performance } = require('perf_hooks')
-let { MessageType } = require('@adiwajshing/baileys-md')
-let handler = async(m, { conn, DevMode }) => {
+let {
+    performance
+} = require('perf_hooks')
+let {
+    MessageType
+} = require('@adiwajshing/baileys-md')
+let handler = async (m, {
+    conn,
+    DevMode
+}) => {
     try {
         let old = performance.now()
         await m.reply('_Testing speed..._')

@@ -15,18 +15,20 @@ function connect(conn, PORT) {
     conn.on('qr', qr => {
         _qr = qr
     })
-    
+
     let server = app.listen(PORT, () => console.log('App listened on port', PORT))
     let io = SocketIO(server)
     io.on('connection', socket => {
-        let { unpipeEmit } = pipeEmit(conn, socket, 'conn-')
+        let {
+            unpipeEmit
+        } = pipeEmit(conn, socket, 'conn-')
         socket.on('disconnect', unpipeEmit)
     })
 }
 
 function pipeEmit(event, event2, prefix = '') {
     let old = event.emit
-    event.emit = function (event, ...args) {
+    event.emit = function(event, ...args) {
         old.emit(event, ...args)
         event2.emit(prefix + event, ...args)
     }

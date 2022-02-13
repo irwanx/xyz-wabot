@@ -1,6 +1,11 @@
-let { MessageType } = require('@adiwajshing/baileys-md')
+let {
+    MessageType
+} = require('@adiwajshing/baileys-md')
 let pajak = 0.02
-let handler = async(m, { conn, text }) => {
+let handler = async (m, {
+    conn,
+    text
+}) => {
     if (!text) throw 'Masukkan jumlah Limit yang akan diberi'
     let who
     if (m.isGroup) who = m.mentionedJid[0]
@@ -17,7 +22,6 @@ let handler = async(m, { conn, text }) => {
     if (limit > users[m.sender].limit) throw 'Limit tidak mencukupi untuk mentransfer'
     users[m.sender].limit -= limit
     users[who].limit += poin
-
     m.reply(`(${-poin} Limit) + (${-pjk} Limit (Pajak 2%)) = ( ${-limit} Limit)`)
     conn.fakeReply(m.chat, `+${poin} Limit`, who, m.text)
 }

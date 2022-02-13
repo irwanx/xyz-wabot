@@ -1,19 +1,40 @@
 let limit = 50
 let fetch = require('node-fetch')
-const { servers, ytv } = require('../lib/y2mate')
-let handler = async(m, { conn, args, isPrems, isOwner }) => {
+const {
+    servers,
+    ytv
+} = require('../lib/y2mate')
+let handler = async (m, {
+    conn,
+    args,
+    isPrems,
+    isOwner
+}) => {
     if (!args || !args[0]) return m.reply('Uhm... urlnya mana?')
     let chat = global.db.data.chats[m.chat]
     let server = (args[1] || servers[0]).toLowerCase()
-    let { dl_link, thumb, title, filesize, filesizeF } = await ytv(args[0], servers.includes(server) ? server : servers[0])
+    let {
+        dl_link,
+        thumb,
+        title,
+        filesize,
+        filesizeF
+    } = await ytv(args[0], servers.includes(server) ? server : servers[0])
     let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
     m.reply(isLimit ? `Ukuran File: ${filesizeF}\nUkuran file diatas ${limit} MB, download sendiri: ${dl_link}` : wait)
     let _thumb = {}
-    try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } } catch (e) {}
+    try {
+        _thumb = {
+            thumbnail: await (await fetch(thumb)).buffer()
+        }
+    } catch (e) {}
     if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4', `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
-    `.trim(), m, false, { thumbnail: Buffer.alloc(0), mimetype: 'video/mp4' })
+    `.trim(), m, false, {
+        thumbnail: Buffer.alloc(0),
+        mimetype: 'video/mp4'
+    })
 }
 handler.help = ['mp4', 'v', ''].map(v => 'yt' + v + ` <url> [server: ${servers.join(', ')}]`)
 handler.tags = ['downloader']
