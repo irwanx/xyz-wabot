@@ -1,7 +1,7 @@
 let fs = require('fs')
 //bts================================================
-global.owner = ['62882008369956', '628882611841', '62895384992596', '6285725736656'] // Letakan nomor kamu disini
-global.mods = ['62882008369956', '628882611841'] // Moderator?
+global.owner = ['62882008369956', '628882611841', '62895384992596', '6285725736656','6289638023602'] // Letakan nomor kamu disini
+global.mods = ['62882008369956', '628882611841','6289638023602'] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
@@ -27,16 +27,16 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikey',
+  'https://api.xteam.xyz': 'cristian9407',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
-  'https://api.lolhuman.xyz': 'apikey',
+  'https://api.lolhuman.xyz': 'RIFQIBOTZ',
   'https://api.vhtear.com': 'sayahafiz',
-  'https://fxc7-api.herokuapp.com': 'apikey',
-  'https://api.justaqul.xyz': 'apikey',
-  'http://zekais-api.herokuapp.com': 'apikey',
+  'https://fxc7-api.herokuapp.com': 'pnj8NAJb',
+  'https://api.justaqul.xyz': '5kbUqdG00OXelFYx',
+  'http://zekais-api.herokuapp.com': 'grqgD6pU',
   'https://irwan-api1-xyz.herokuapp.com': 'memek',
-  'https://melcanz.com': 'trial'
+  'https://melcanz.com': 'jokowi3periode'
 
 }
 
