@@ -35,8 +35,8 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = ':)'
-global.author = '@dobda.id'
-global.packnamee = 'COLONG\nWAJIB FOLLOW IG'
+global.author = 'Xyz-Wabot'
+global.packnamee = 'P'
 
 global.gcex = "https://chat.whatsapp.com/L508viIjjPwHpYEqgTxqj6"
 global.fotoex = "https://telegra.ph/file/5f6d986c0b87dc6a0d78b.jpg"
