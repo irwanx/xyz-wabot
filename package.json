@@ -49,6 +49,7 @@
         "g-i-s": "^2.1.6",
         "google-it": "^1.6.2",
         "got": "^12.0.1",
+        "qrcode-terminal": "^0.12.0",
         "human-readable": "^0.2.1",
         "is-porn": "^0.9.0",
         "jsdom": "^18.1.1",
