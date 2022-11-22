@@ -4,6 +4,7 @@
     "description": "Jika Bot Mengalami Error/Tidak Berfungsi/Kamu Menemukan Bug, Langsung Laporkan Ke Owner. Terimakasih",
     "depecrated": false,
     "main": "index.js",
+    "type": "module",
     "directories": {
         "lib": "lib",
         "src": "src",
