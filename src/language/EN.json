@@ -1,0 +1,86 @@
+{
+    "LANGUAGE": "english",
+    "LANGCODE": "en",
+    "AUTHOR": "Ameliascrf",
+    "STRINGS": {
+        "_bot": {
+            "NAME": "DOBDABOT",
+            "RESTART": "Restarting the Bot.",
+            "COMMAND": "Command",
+            "DESC": "Decription",
+            "EXAMPLE": "Example",
+            "NOT_FOUND": "I can't find a command like this",
+            "WARN": "Warning"
+        },
+        "_plugin": {
+            "ERROR": "❌ FAILED",
+            "NEED_NAME_PLUGIN": "Please enter a File Name! Example: .sf plugins/melcanz.js",
+            "NEED_WORD": "You must enter the word!",
+            "NEED_USERS": "Tag a member",
+            "NEED_REPLY": "Reply Message",
+            "NEED_REPLY_BOT": "Reply Message from bot",
+            "NEED_URL": "Please enter URL ! Example:",
+            "NEED_URL_TIKTOK": "You Must Enter Tiktok Link!\n*example:* .tiktok https://vm.tiktok.com/ZSJY27ExT/",
+            "NEED_LIST": "Please select the list below",
+            "NEED_REPLY_VIDEO": "You have to reply to the video!"
+        },
+        "_owner": {
+            "PLUGINSS_WARN": "⚠️️ *Attention!*\n*The plugin you saved is unofficial!*",
+            "PLUGINSS_INVALID_NAME": "Please enter a valid file name!",
+            "PLUGINSS_INVALID": "*❌ Your plugin is invalid!*\n*Error:*",
+            "PLUGINSS_INSTALLED": "*✅ Plugin saved successfully!*",
+            "PLUGINS_REMOVE_DESC": "Remove the plugin.",
+            "BAN_DESC": "Ban someone in the group/banned Group. Reply to messages or tag someone to use banned.",
+            "PLUGINS_REMOVE_DELETED": "*✅ The plugin was successfully removed! You must restart for the changes to take effect.*"
+        },
+        "_admin": {
+            "BAN_HELP": "This command is for banning chat bots so that bots don't respond in this group",
+            "ADD_DESC": "Adding someone to a group",
+            "ALREADY_PROMOTED": "How do I make someone an admin who is already an admin?",
+            "PROMOTE_DESC": "Making someone an admin.",
+            "ALREADY_NOT_ADMIN": "How do I make someone an admin who is already an admin?",
+            "MUTE_DESC": "Mute group chat. Only admins can send messages.\n⌨️ Example: #group close & #group open",
+            "MUTED": "Muted group chats!",
+            "UNMUTE_DESC": "Open a group chat. Anyone can send messages.",
+            "INVITE": "Invitation link:"
+        },
+        "_download": {
+            "_tiktok": {
+                "TIKTOK": "Download video from Tiktok.",
+                "CAPTION": "Caption:",
+                "USERNAME": "Username:",
+                "LINK": "Link Username:",
+                "NAME": "Name:",
+                "LIKE": "Count Like:",
+                "COMMENT": "Count Comments:",
+                "VIEW": "Views:",
+                "SHARE": "Count Shared:",
+                "MUSIC": "Music:",
+                "MUSIC_AUTHOR": "Music Author:"
+            },
+            "_instagram": {
+                "STALK_DESC": "This command is to view/stalk someone's instagram account\nUse Example\n.igstalk dobda.id",
+                "DESC": "Download videos or photos from Instagram",
+                "LOADING": "Loading user profile.. Please wait.",
+                "USERNAME": "Username",
+                "NAME": "Name",
+                "BIO": "Biography",
+                "FOLLOWERS": "Followers",
+                "FOLLOWS": "Follows",
+                "PRIVATE": "Private Account",
+                "NOT_FOUND": "Media Not Found!"
+            }
+        },
+        "_convert": {
+            "TO_GIF": "Convert stiker gif to video.",
+            "TO_VIDEO": "Stiker gif convetrt to Video..",
+            "TO_AUDIO": "Convert video menjadi suara.",
+            "TO_IMAGE": "Convert stiker to Image..",
+            "TTP_DESC": "Convert Text to Sticker",
+            "ATTP_DESC": "Convert Text To Sticker Colour"
+        },
+        "_tools": {
+            "SS_DESC": "Take a screenshot of the page at the given link."
+        }
+    }
+}

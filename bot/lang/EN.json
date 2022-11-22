@@ -1,0 +1,55 @@
+{
+    "LANGUAGE": "ENGLISH",
+    "LANGCODE": "EN",
+    "STRINGS": {
+        "_DFAIL": {
+            "soon": "*Access Denied*\n\nHay👋\nThis feature is still under development\nPlease try again later!!",
+            "mt": "*Access Denied*\n\nHay, *${m.name} \nThis feature is under construction...\nPlease try again later!!",
+            "rowner": "*Access Denied*\n\nHay👋\nThis feature is only for bot developers!!",
+            "owner": "*Access Denied*\n\nHay👋\nThis feature is only for bot owners!!",
+            "mods": "*Access Denied*\n\nHay👋\nThis feature is only for bot moderators!!",
+            "premium": "*Access Denied*\n\nHay👋\nThis feature is for premium users only!!",
+            "group": "*Access Denied*\n\nHay👋\nThis feature can only be used in groups!!",
+            "private": "*Access Denied*\nHay👋\nThis feature can only be used in private chat!!",
+            "admin": "*Access Denied*\n\nHay👋\nThis feature is only for group admins!!",
+            "botAdmin": "*Access Denied*\n\nHay👋\nThis feature can be used if the bot is a group admin!!",
+            "unreg": "*Access Denied*\n\nHay👋\nPlease register first\nTo use this feature.\n\nExample:\n#register *Benjamin.15*",
+            "mature": "*18+*\n\nHay👋\nAdult Features Off.",
+            "indo": "*Access Denied*\nHay👋\nThis feature can only be used by the number +62 (indonesia).",
+            "restrict": "This feature is *Off*!"
+        },
+        "_HANDLER": {
+            "MSG_DEL": "It was detected that someone deleted the message\nTo turn this feature off, type\n*.enable delete*",
+            "LIMIT_USED": "Limit used",
+            "LIMIT_MIN": "Your limit has run out, please buy through",
+            "WAIT": [
+                "\n   *Waiting in Process...*\n",
+                "\n    *Loading...*\n",
+                "\n    *Wait a minute*\n",
+                "\n    *Wait a second*\n"
+            ],
+            "EROR": [
+                "Error",
+                "Astagfirullah Error",
+                "Nice Errors",
+                "error bro",
+                "Funny Error :v",
+                "Wtf Error :v",
+                "Caaa error",
+                "Bye (stone emote) Error",
+                "Kyaa Error",
+                "Error dear"
+            ],
+            "SUCCESS": [
+                "Success dear..",
+                "Done",
+                "Success",
+                "DOBDABOT MD"
+            ]
+        },
+        "_PLUGINS": {
+            "MENU_FOOTER": "SHORT GUIDE\n\n<> is query parameter\nExample: .join <link> then .join https://chat.whatsapp.com/\n[] is a person tag or number parameter\nExample: .kick [@62XXXX] then .kick @62XXXX\n(limit) or (premium) is a description of whether the feature requires a limit/only for premium users. ]",
+            "MENU_ERR": "Sorry, menu is in error, Report to Owner"
+        }
+    }
+}

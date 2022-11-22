@@ -1,0 +1,70 @@
+{
+    "LANGUAGE": "INDONESIA",
+    "LANGCODE": "ID",
+    "STRINGS": {
+        "_DFAIL": {
+            "soon": "*Akses Di Tolak*\n\nHay👋\nFitur ini masih dalam tahap penggembangan\nSilahkan coba lagi nanti!!",
+            "mt": "*Akses Di Tolak*\n\nHay, *${m.name} 👋\nFitur ini sedang dalam perbaikan...\nSilahkan coba lagi nanti!!",
+            "rowner": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya untuk developer bot!!",
+            "owner": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya untuk owner bot!!",
+            "mods": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya untuk moderator bot!!",
+            "premium": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya untuk pengguna premium!!",
+            "group": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya dapat digunakan didalam grup!!",
+            "private": "*Akses Di Tolak*\nHay👋\nFitur ini hanya dapat digunakan didalam chat pribadi!!",
+            "admin": "*Akses Di Tolak*\n\nHay👋\nFitur ini hanya untuk admin grup!!",
+            "botAdmin": "*Akses Di Tolak*\n\nHay👋\nFitur ini dapat digunakan jika bot menjadi admin grup!!",
+            "unreg": "*Akses Di Tolak*\n\nHay👋\nSilahkan daftar terlebih dahulu\nUntuk menggunakan fitur ini.\n\nContoh:\n#register *Benjamin.15*",
+            "mature": "*18+*\n\nHay👋\nFitur Dewasa Tidak Aktif.",
+            "indo": "*Akses Di Tolak*\nHay👋\nFitur Ini hanya bisa di gunakan oleh nomor +62 (indonesia).",
+            "restrict": "Fitur ini di *Tidak aktif*!"
+        },
+        "_HANDLER": {
+            "MSG_DEL": "Terdeteksi seseorang telah menghapus pesan\nUntuk mematikan fitur ini, ketik\n*.enable delete*",
+            "LIMIT_USED": " Limit terpakai",
+            "LIMIT_MIN": "Limit anda habis, silahkan beli melalui",
+            "WAIT": [
+                "\n「 ⏱️ 」 *Tunggu Sedang di Proses...*\n",
+                "\n      「 ⏱️ 」 *Loading...*\n",
+                "\n    *bentar lagi badmood Aku*\n",
+                "\n    *Iya lagi diproses*\n",
+                "\n          *sabar ya*\n",
+                "\n    *Bentar aku usahain dlu*\n",
+                "\n  *Mulai dari nol yahh say*\n",
+                "\n *Tunggu bentar, jangan kemana-mana ya*\n",
+                "\n     「 ⏱️ 」 *Wait a minute*\n",
+                "\n     「 ⏱️ 」 *Wait a second*\n",
+                "\n  *Iya iyaaa bntar sayang*\n",
+                "\n *Iya bentar lagi, jangan spam ya*\n",
+                "\n *Lagi di proses, kurang cepet? Donasi om, jangan pake doang, huhuu*\n"
+            ],
+            "EROR": [
+                "Error",
+                "Astagfirullah Error",
+                "Nice Error",
+                "Salah Format Keknya :v",
+                "error bro",
+                "Kocak Error :v",
+                "Wtf Error :v",
+                "Ciaaa error",
+                "Error cuyy",
+                "Dahlah (emot batu) Error",
+                "Kyaa Error",
+                "Error Sayangg",
+                "Error Mengcapek Keknya Aku",
+                "Astoge Error, Yok Bisa Yok",
+                "Buset Error :)",
+                "Lah Gabisa, Kurang Donasi Aku Ni Keknya"
+            ],
+            "SUCCESS": [
+                "Sukses Sayang.. ",
+                "Done",
+                "Sukses",
+                "DOBDABOT MD"
+            ]
+        },
+        "_PLUGINS": {
+            "MENU_FOOTER": "PANDUAN SINGKAT\n\n<> adalah parameter query\nContoh: .join <link> maka .join https://chat.whatsapp.com/\n[] adalah tag seseorang atau parameter nomor\nContoh: .kick [@62XXXX] maka .kick @62XXXX\n(limit) atau (premium) adalah keterangan apakah fitur tersebut memerlukan limit/hanya untuk user premium.\nPenggunaan command tidak usah menggunakan ()\nPenggunaan tidak usah menggunakan <> atau []",
+            "MENU_ERR": "Maaf, menu sedang error, Lapor ke Owner"
+        }
+    }
+}

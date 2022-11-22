@@ -1,0 +1,109 @@
+{
+    "LANGUAGE": "indonesia",
+    "LANGCODE": "id",
+    "AUHTOR": "Ameliascrf",
+    "STRINGS": {
+        "_bot": {
+            "NAME": "DOBDABOT",
+            "RESTART": "Sedang Merestart Bot.",
+            "COMMAND": "Perintah",
+            "DESC": "Deskripsi",
+            "EXAMPLE": "Contoh",
+            "NOT_FOUND": "*Saya tidak dapat menemukan perintah seperti ini*",
+            "WARN": "Peringatan",
+            "ADD": "Telah Masuk Dari Group",
+            "BYE": "Telah Keluar Dari Group",
+            "PROMOTE": "Sekarang Admin",
+            "DEMOTE": "Sekarang Bukan Admin",
+            "DELETE": "Telah menghapus pesan Untuk mematikan fitur ini, ketik *.enable delete*",
+            "DFAIL_SOON": "*Akses Di Tolak*\n\nHay 👋\nFitur ini masih dalam tahap penggembangan\nsilahkan coba lagi nanti!!",
+            "DFAIL_MT": "*Akses Di Tolak*\n\nHay 👋\nFitur ini sedang dalam perbaikan...\nsilahkan coba lagi nanti!!",
+            "DFAIL_ROWNER": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya untuk developer bot!!",
+            "DFAIL_OWNER": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya untuk owner bot!!",
+            "DFAIL_MODS": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya untuk moderator bot!!",
+            "DFAIL_PREMIUM": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya untuk pengguna premium!!",
+            "DFAIL_GROUP": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya dapat digunakan didalam grup!!",
+            "DFAIL_PRIVATE": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya dapat digunakan didalam chat pribadi!!",
+            "DFAIL_ADMIN": "*Akses Di Tolak*\n\nHay 👋\nFitur ini hanya untuk admin grup!!",
+            "DFAIL_BOT_ADMIN": "*Akses Di Tolak*\n\nHay 👋\nFitur ini dapat digunakan jika bot menjadi admin grup!!",
+            "DFAIL_UNREG": "*Akses Di Tolak*\n\nHay 👋\nSilahkan daftar terlebih dahulu untuk menggunakan fitur ini.\n\ncontoh:\n#register *Amelia.15*",
+            "DFAIL_MATURE": "*18+*\n\nHay 👋\nFitur Dewasa Tidak Aktif.",
+            "DFAIL_INDO": "*Akses Di Tolak*\n\nHay 👋\nFitur Ini hanya bisa di gunakan oleh nomor +62 (indonesia).",
+            "DFAIL_RESTRICT": "Fitur ini di *Tidak Di Aktifkan*!"
+        },
+        "_plugin": {
+            "ERROR": "❌ GAGAL",
+            "NEED_NAME_PLUGIN": "Harap masukkan sebuah Nama File! Contoh: .sf plugins/melcanz.js",
+            "NEED_WORD": "Anda harus memasukkan kata-kata!",
+            "NEED_USERS": "Tag salah satu Member",
+            "NEED_REPLY": "Balas Pesannya",
+            "NEED_REPLY_BOT": "Balas Pesan dari bot",
+            "NEED_URL": "Harap masukkan URL ! Contoh:",
+            "NEED_URL_TIKTOK": "Anda Harus Memasukkan Tautan Tiktok!``` \n*contoh:* ```.tiktok https://vm.tiktok.com/ZSJY27ExT/",
+            "NEED_LIST": "Silahkan Pilih List Di Bawah ini",
+            "NEED_REPLY_VIDEO": "*Anda harus membalas videonya!*"
+        },
+        "_owner": {
+            "PLUGINSS_WARN": "⚠️ *Perhatian!*\n*Plugin yang Anda simpan tidak resmi!*",
+            "PLUGINSS_INVALID_NAME": "Harap masukkan nama file yang valid!",
+            "PLUGINSS_INVALID": "*❌ Plugin Anda tidak valid!*\n*Kesalahan:*",
+            "PLUGINSS_INSTALLED": "*✅ Plugin berhasil disimpan!*",
+            "PLUGINS_REMOVE_DESC": "Menghapus plugin.",
+            "BAN_DESC": "Ban seseorang dalam grup/banned Group. Balas pesan atau tag seseorang untuk menggunakan membanned.",
+            "PLUGINS_REMOVE_DELETED": "*✅ Plugin berhasil dihapus! Anda harus memulai ulang agar perubahan diterapkan.*"
+        },
+        "_admin": {
+            "BAN_HELP": "Perintah Ini Untuk Membanned Chat Bot agar bot tidak merespon",
+            "ADD_DESC": "Menambahkan seseorang ke grup",
+            "ALREADY_PROMOTED": "Bagaimana cara menjadikan seseorang admin yang sudah menjadi admin?",
+            "PROMOTE_DESC": "Menjadikan seseorang sebagai admin.",
+            "ALREADY_NOT_ADMIN": "Bagaimana cara menjadikan seseorang admin yang sudah menjadi admin?",
+            "MUTE_DESC": "Bisukan chat grup. Hanya admin yang bisa mengirim pesan.\n⌨️ Contoh: #group close & #group open",
+            "MUTED": "Chat grup dibisukan!",
+            "UNMUTE_DESC": "Buka chat grup. Siapapun bisa mengirim pesan.",
+            "INVITE": "Tautan undangan:"
+        },
+        "_download": {
+            "_tiktok": {
+                "TIKTOK": "Mengunduh video dari Tiktok.",
+                "CAPTION": "Penjelasan:",
+                "USERNAME": "Nama pengguna:",
+                "LINK": "Tautan Pengguna:",
+                "NAME": "Nama:",
+                "LIKE": "Jumlah Suka:",
+                "COMMENT": "Jumlah Komentar:",
+                "VIEW": "Tampilan:",
+                "SHARE": "Jumlah dibagikan:",
+                "MUSIC": "Musik:",
+                "MUSIC_AUTHOR": "Pemilik Musik:"
+            },
+            "_instagram": {
+                "STALK_DESC": "Perintah ini untuk melihat/stalk akun instagram seseorang\ncontoh\n.igstalk dobda.id",
+                "DESC": "Unduh video atau foto dari Instagram",
+                "LOADING": "Memuat profil pengguna.. Mohon tunggu.",
+                "USERNAME": "Nama pengguna",
+                "NAME": "Nama",
+                "BIO": "Biografi",
+                "FOLLOWERS": "Pengikut",
+                "FOLLOWS": "Diikuti",
+                "PRIVATE": "Akun Privat",
+                "NOT_FOUND": "*Media Tidak Ditemukan!*"
+            }
+        },
+        "_convert": {
+            "TO_GIF": "Mengubah stiker animasi menjadi video.",
+            "TO_VIDEO": "Stiker Animasi Mengonversi Ke Video..",
+            "TO_AUDIO": "Mengubah video menjadi suara.",
+            "TO_IMAGE": "Mengubah stiker menjadi foto..",
+            "STICKER_DESC": "Mengonversi stiker menjadi foto..",
+            "TTP_DESC": "Mengonversi teks menjadi sticker biasa.",
+            "ATTP_DESC": "Mengubah teks menjadi stiker berwarna"
+        },
+        "_xp": {
+            "XP": "Limit anda habis, silahkan beli melalui *#buy*"
+        },
+        "_tools": {
+            "SS_DESC": "Mengambil screenshot dari halaman di link yang diberikan."
+        }
+    }
+}
