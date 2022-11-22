@@ -1,0 +1,9 @@
+node_modules/
+autodl/
+package-lock.json
+tmp/
+session.data.json
+database.json
+data.store.json
+sessions/
+img/
