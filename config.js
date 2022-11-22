@@ -1,6 +1,7 @@
 import { watchFile, unwatchFile, fchmod } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
+import fs from 'fs'
 global.set = {
 	desc: 'xyz-wabot',
 	browser: 'Firefox',
@@ -18,7 +19,7 @@ global.set = {
 		['628882611841', 'Irwanx', true, 'Owner', 'irwan080304@gmail.com', 'https://github.com/irwanx', 'Founder Bot/Owner 1st'],
 		['6285877109523', 'Amelia Cans', true, 'Owner', 'amelia@dikode-team.com', 'https://amelia.my.id', 'Owner 2nd']
 	],
-	mods: [],
+	mods: JSON.parse(fs.readFileSync('./src/mods.json')),
 	prems: [],
 	readMore: String.fromCharCode(8206).repeat(4001),
 	multiplier: 69,
