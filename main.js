@@ -16,7 +16,6 @@ import {
 import {
   plugins,
   loadPluginFiles,
-  reload,
   pluginFolder,
   pluginFilter
 } from './lib/plugins.js'

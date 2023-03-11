@@ -1,8 +1,5 @@
 import db from '../../lib/database.js'
-import { canLevelUp } from '../../lib/levelling.js'
 import func from '../../lib/function.js'
-import moment from 'moment-timezone'
-const jam = moment.tz('Asia/Jakarta').format('HH')
 
 let handler = m => m
 
@@ -16,11 +13,11 @@ handler.all = async function (m) {
       if (!banned) return this.sendButton(m.chat, isBanned ? 'Bot Tidak Aktif Di Chat Ini': 'Bot Aktif di chat ini', wm, null, [[isBanned ? 'Unban': 'Menu', isBanned ? '#unban' : '#?']], m)
       if (banned) return this.sendRHydrated(m.chat, 'Kamu dibanned\nSilahkan Join Group dan tag admin untuk membuka banned kamu', wm, 'https://chat.whatsapp.com/L508viIjjPwHpYEqgTxqj6', 'Join Group Bot', null, null, [['Pemilik Bot', '.owner'], ['Donasi', '.donasi']], m)
     }
-    if (m.key.fromMe) return
+    /*if (m.key.fromMe) return
     if (m.isBaileys) return
     if (m.mentionedJid.includes(this.user.jid)) {
         await this.sendMessage(m.chat, { audio: { url: "./src/audio/apasihm.mp3" }, mimetype: 'audio/mpeg', ptt: true, seconds: numb }, { quoted: m })
-    }
+    }*/
     /*
     * BATAS AUTO RESPON
     * OKE BOSKU

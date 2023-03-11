@@ -17,9 +17,7 @@ import {
     unwatchFile,
     watchFile
 } from 'fs'
-import fs from 'fs'
 import chalk from 'chalk'
-import fetch from 'node-fetch'
 import Connection from './lib/connection.js'
 import printMessage from './lib/print.js'
 import Helper from './lib/helper.js'
@@ -27,8 +25,6 @@ import Func from './lib/function.js'
 import db, {
     loadDatabase
 } from './lib/database.js'
-import request from 'request'
-import jimp from 'jimp'
 import Queque from './lib/queque.js'
 /** @type {import('@adiwajshing/baileys')} */
 const { getContentType, proto } = (await import('@adiwajshing/baileys')).default

@@ -1,7 +1,6 @@
 import * as bo from '@bochilteam/scraper'
 import db from '../../lib/database.js'
 import fetch from 'node-fetch'
-import fs from 'fs'
 let handler = m => m
 handler.all = async function(m) {
     if (!m.fromMe) {
@@ -63,6 +62,7 @@ handler.all = async function(m) {
                 })
             })
         }
+        /*
          * AUTO DOWNLOAD MEDIA YOUTUBE
          */
         if (/^(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:shorts\/)?(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})$/i.test(m.text)) {

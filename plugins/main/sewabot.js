@@ -1,6 +1,4 @@
-//import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 import moment from 'moment-timezone'
-import fetch from 'node-fetch'
 import db from '../../lib/database.js'
 let handler = async (m, {
   conn, args

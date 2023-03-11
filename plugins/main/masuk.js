@@ -4,4 +4,4 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.command = /^(masuk)$/i
 
-module.exports = handler
+export default handler

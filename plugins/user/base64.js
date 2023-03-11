@@ -1,5 +1,4 @@
 let handler = async (m, {
-  command,
   text
 }) => {
   let txt = m.quoted && m.quoted.text ? m.quoted.text : text

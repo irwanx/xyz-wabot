@@ -1,6 +1,5 @@
 import Connection from '../../lib/connection.js'
 import { cpus as _cpus, totalmem, freemem } from 'os'
-// import util from 'util'
 import { performance } from 'perf_hooks'
 import { sizeFormatter } from 'human-readable'
 let format = sizeFormatter({

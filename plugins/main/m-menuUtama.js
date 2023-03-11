@@ -2,9 +2,7 @@ import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../../lib/levelling.js'
 import { plugins } from '../../lib/plugins.js'
-import sharp from 'sharp'
-import fetch from 'node-fetch'
-import Func '../../lib/function.js'
+import Func from '../../lib/function.js'
 import db from '../../lib/database.js'
 let tags = {
   'main': 'Main',

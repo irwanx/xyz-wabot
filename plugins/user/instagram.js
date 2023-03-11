@@ -1,9 +1,3 @@
-import {
-  instagramdl,
-  instagramdlv2,
-  instagramdlv3,
-  instagramdlv4
-} from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, {
   conn, args, usedPrefix, command
@@ -18,7 +12,6 @@ Anda juga bisa menggunakan perintah
 
 Contoh:
 ${usedPrefix}${command} https://www.instagram.com/p/ByxKbUSnubS/?utm_source=ig_web_copy_link`
-  //const results = http://Api.stazyu.my.id/api/downloader?url=(args[0])
   let anu = await fetch("http://Api.stazyu.my.id/api/downloader?url=" + args[0])
   var {
     result

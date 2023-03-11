@@ -1,5 +1,4 @@
 import { youtubeSearch } from '@bochilteam/scraper'
-import fetch from 'node-fetch'
 import Func from '../../lib/function.js'
 let handler = async (m, {
     conn,

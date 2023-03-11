@@ -1,4 +1,3 @@
-import func from '../../lib/function.js'
 import db from '../../lib/database.js'
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 
